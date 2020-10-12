@@ -1,0 +1,408 @@
+
+::-webkit-scrollbar
+{
+	width: 0;
+}
+#scrollPath
+{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 5px;
+	height: 100%;
+	background: rgba(255,255,255,0.05);
+}
+#progressbar
+{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 5px;
+	height: 100%;
+	background: linear-gradient(to top, #008aff,#00ffe7);
+	animation: animate 5s linear infinite;
+}
+@keyframes animate
+{
+	0%,100%
+	{
+		filter: hue-rotate(0deg);
+	}
+	50%
+	{
+		filter: hue-rotate(360deg);
+	}
+}
+#progressbar:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, #008aff,#00ffe7);
+	filter: blur(10px);
+}
+#progressbar:after
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, #008aff,#00ffe7);
+	filter: blur(30px);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+#header {
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  height: 150px;
+}
+
+#header1{
+font-family: "Yellowtail";
+  font-size: 70px;
+  position: absolute;
+  top:10px;
+  left: 450px;
+  bottom: 50px;
+  }
+  
+#header2{
+font-family: "Amita";
+font-size: 20px;
+position: absolute;
+top: 100px;
+bottom: 10px;
+left: 525px;
+}  
+
+/* Style the top navigation bar */
+.parvtopnav {
+  overflow: auto;
+  background-color: Black;
+  top: 0px;
+}
+
+/* Style the topnav links */
+.parvtopnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border: 1px solid black;
+  overflow: auto;
+}
+#asdfg{
+  float: left;
+  display: inline;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 0.5px solid black;
+  overflow: auto;
+  cursor: pointer;
+  font-size: 40px;
+  position: relative;
+}
+
+#icon{
+font-size:20px;
+color: #f1f1f1;
+}
+
+#icon1:hover{
+color: yellow;
+filter: blur(0.5px);
+}
+
+#icon2:hover{
+color: Red;
+filter: blur(0.5px);
+}
+
+#icon3:hover{
+color: Green;
+filter: blur(0.5px);
+}
+
+#icon4:hover{
+color: blue;
+filter: blur(0.5px);
+}
+
+
+/* Change color on hover */
+.parvtopnav a:hover {
+  color: blue;
+  background-color: #111;
+}
+
+/* search bar configruation */
+
+.parvtopnav .search-container {
+  float: right; 
+}
+
+.parvtopnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  margin-right: 10px;
+}
+
+.bord{
+border: 0px solid black;}
+
+.bord:hover{
+border: 0px solid black;}
+
+.parvtopnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #f2f2f2;
+  font-size: 17px;
+  border: 0px solid black;
+  cursor: pointer;
+  color: black;
+  border-radius: 5px;
+  position: relative;
+  margin-left: -47px;
+}
+
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.rside{
+width: 15%;
+}
+
+/* column lside used for left navigation bar */
+.column.lside {
+  width: 15%;
+  position: sticky;
+  z-index: 1;
+  top: 40px;
+  left: 0;
+  background-color: Black;
+  overflow: auto;
+  padding-top: 20px;
+  height: 100%;
+  padding-bottom: 10%;
+  display: block;
+}
+
+.column.lside a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  padding-top: 15px;
+  cursor: pointer;
+}
+
+.column.lside a:hover {
+  color: #f1f1f1;
+}
+/* hidden navigation button */
+.hiddnav{
+width: 50%;
+  position: relative;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow: auto;
+  padding-top: 20px;
+  height: 100%;
+  padding-bottom: 10%;
+  display: block;
+  cursor: pointer;
+}
+
+.hiddnav a{
+padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  padding-top: 15px;}
+  
+.hiddnav a:hover{
+color: #f1f1f1;
+} 
+
+/* jobs by state css code*/
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: white;
+  text-decoration: none;
+}
+
+.img{position: relative;
+top: 0%;
+right:-33%;
+height: 600px;
+width: 600px;}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  margin-top: 30px;
+  color: white;
+  }
+  
+ /* jobs by qualification */
+
+.card {
+  transition: 0.3s;
+  width: 20%;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  margin: 50px;
+  display: inline-block;
+  transition: background-color 1s, color 0.5s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(255,255,255,0.3);
+  color: white;
+  background-color: black;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.cardanchor{
+text-decoration: none;
+color: black;
+transition: color 0.5s;}
+
+.cardanchor:hover{
+color: white;}
+
+
+#c1{
+position: absolute;
+margin-left: 7%;
+cursor: pointer;
+}
+
+#c2{
+position: relative;
+margin-left: 30%;
+cursor: pointer;
+}
+
+#c3{position: relative;
+margin-left: -2%;
+cursor: pointer;
+}
+
+#c4{position: relative;
+margin-left: -2%;
+cursor: pointer;}
+
+#c5{position: relative;
+margin-top: -6%;
+margin-left: 0%;
+cursor: pointer;}
+
+.headtext{
+text-align: center;
+font-size: 30px;
+color: white;
+margin: 3%;
+position: relative;
+margin-top: 3%;
+} 
+
+.headborder{
+border-left: 5px solid white;
+border-radius: 5px;
+color: white;
+font-size: 30px;
+position: absolute;
+margin-top: 3%;
+margin-left: 32%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 70%;
+  border-right: 0.5px solid grey;
+  }
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 900px) {
+  .column.middle {
+    width: 100%;
+  }
+  .column.lside, .column.rside{
+  display: none;
+  }
+   #asdfg{display:block;}
+   #parvcolumn{display:none;}
+}
+
+@media screen and (min-width: 900px) {
+	 #asdfg{display:none;}
+	  #parvcolumn{display:none;}
+  }
+
+.outer_border{
+border-style: solid;
+}
+

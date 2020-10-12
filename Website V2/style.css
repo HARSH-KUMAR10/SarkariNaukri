@@ -1,0 +1,61 @@
+body{
+	margin:0px;
+}
+#head-container{
+	padding:20px;
+	background-color:black;
+	color:white;
+	text-align:center;
+}
+#head-heading{
+font-family: 'Yellowtail';
+  font-size: 70px;
+}
+#head-second-heading{
+font-family: "Amita";
+font-size: 20px;
+}
+#navigation{
+	background-color:black;
+	color:white;
+	padding:5px;
+	text-align:right;
+}
+#icon{
+font-size:20px;
+color: #f1f1f1;
+}
+#searchBox{
+	font-size:20px;
+}
+#navigation-panel{
+	word-spacing:15px;
+}
+#side-navigation{
+	display:inline-block;
+	background-color:black;
+	font-family:verdana;
+	font-size:25px;
+	padding:10px;
+	line-height:20px;
+}
+#side-navigation a{
+	text-decoration:none;
+	color:grey;
+	padding-bottom:30px;
+}
+#side-navigation a:hover{
+	color:white;
+}
+#side-navigation button{
+	background-color:black;
+	border:0px solid black;
+	color:grey;
+	padding:0px;
+	font-family:verdana;
+	font-size:25px;
+	cursor:pointer;
+}
+#side-navigation button:hover{
+	color:white;
+}
